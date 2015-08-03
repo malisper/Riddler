@@ -24,8 +24,7 @@
     (lambda (b)
       (knows (a1 a b c)))
     (remove-duplicates
-      (remove-if-not
-        #'plusp
+      (remove-if-not #'plusp
          (list (+ a c) (abs (- a c)))))))
 
 (defun c (a b _)
@@ -36,8 +35,7 @@
     (lambda (c)
       (knows (b a b c)))
     (remove-duplicates
-      (remove-if-not
-        #'plusp
+      (remove-if-not #'plusp
         (list (+ a b) (abs (- a b)))))))
 
 (defun a2 (_ b c)
