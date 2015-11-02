@@ -22,7 +22,7 @@
   (declare (ignore _))
   (remove-if
     (lambda (b)
-      (knows (a1 a b c)))
+      (know (a1 a b c)))
     (remove-duplicates
       (remove-if-not #'plusp
          (list (+ a c) (abs (- a c)))))))
@@ -33,7 +33,7 @@
   (declare (ignore _))
   (remove-if
     (lambda (c)
-      (knows (b a b c)))
+      (know (b a b c)))
     (remove-duplicates
       (remove-if-not #'plusp
         (list (+ a b) (abs (- a b)))))))
@@ -44,7 +44,7 @@
   (declare (ignore _))
   (remove-if
     (lambda (a)
-      (knows (c a b c)))
+      (know (c a b c)))
     (remove-duplicates
       (remove-if-not #'plusp
         (list (+ b c) (abs (- b c)))))))
